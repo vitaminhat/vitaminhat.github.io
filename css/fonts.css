@@ -1,0 +1,42 @@
+/* Import Milan font - Regular */
+@font-face {
+    font-family: 'Milan';
+    src: url('../fonts/Milan/Milan-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Import Milan font - Semibold */
+@font-face {
+    font-family: 'Milan';
+    src: url('../fonts/Milan/Milan-Semibold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Import Proxima font - Italic */
+@font-face {
+    font-family: 'Proxima';
+    src: url('../fonts/Proxima/Proxima-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Typography styles */
+body {
+    font-family: 'Milan', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+p {
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+em, i {
+    font-family: 'Proxima', Arial, sans-serif;
+    font-style: italic;
+}
