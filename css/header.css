@@ -1,0 +1,33 @@
+.header {
+    font-family: 'Milan', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.86em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: calc(100% - 4rem); /* Adjust width to account for side margins */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 2rem 2rem;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    white-space: nowrap; /* Prevent text wrapping */
+    justify-content: flex-start; /* Align ICT time to the left */
+    width: 85px; /* Set a fixed width for the ICT time container */
+    overflow: hidden;
+}
+
+.favicon {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+}

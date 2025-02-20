@@ -9,10 +9,20 @@
 /* Import Milan font - Semibold */
 @font-face {
     font-family: 'Milan';
-    src: url('../fonts/Milan/Milan-Semibold.otf') format('opentype');
+    src: url('../fonts/Milan/Milan-SemiBold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
+
+/* Import Milan font - Medium */
+
+@font-face {
+    font-family: 'Milan';
+    src: url('../fonts/Milan/Milan-Medium.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
 
 /* Import Proxima font - Italic */
 @font-face {
