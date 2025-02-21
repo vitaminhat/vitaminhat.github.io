@@ -31,7 +31,7 @@ img {
 
 /* Optional styles for other headings and text */
 h2 {
-    font-size: 1.75em;
+    font-size: 1.75emindex;
 }
 
 h3 {
@@ -44,6 +44,7 @@ p {
 }
 
 a {
+    color: black;
     text-decoration: underline;
     text-decoration-color: var(--secondary-color);
 }
