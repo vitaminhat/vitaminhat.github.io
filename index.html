@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhat Bui</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="img/essential/fav.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="img/essential/fav.ico" alt="Favicon" class="favicon">
+            <span style="letter-spacing: 0.04em;">VITAMINHAT
+            </span>
+        </div>
+        <div class="header-right">
+            <span id="ict-time" style="color: #888;"></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <img id="sticker" src="img/essential/sticker.png" alt="Sticker">
+        <h1>Nhat Bui</h1>
+        </br>
+        <nav>
+            <a href="#">\about</a>
+            <a href="#">\blog</a>
+            <a href="#">\ls</a>
+        </nav>
+    </div>
+
+
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var options = { timeZone: 'Asia/Ho_Chi_Minh', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            var timeString = now.toLocaleTimeString([], options);
+            document.getElementById('ict-time').textContent = " ICT " + timeString;
+        }
+    
+        // Initial call to set the time
+        updateTime();
+    
+        // Update the time every second
+        setInterval(updateTime, 1000); // 1000 milliseconds = 1 second
+    </script>    
+</body>
+</html>

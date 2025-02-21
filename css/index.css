@@ -1,0 +1,76 @@
+@import url('fonts.css');
+@import url('colors.css');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 1rem; /* Margin on both sides */
+}
+
+.container {
+    text-align: center;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -3rem;
+}
+
+#sticker {
+    width: 124px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav a {
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav a::after {
+    content: " →";  /* Arrow character */
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease;  /* Moves the arrow on hover */
+}
+
+nav a:hover::after {
+    left: 5px;  /* Moves arrow to the right on hover */
+}
+
+/* Optional styles for other headings and text */
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: var(--secondary-color);
+}
+
+a:visited {
+    color: var(--text-color);
+    text-decoration-color: var(--secondary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration-color: var(--primary-color);
+}
