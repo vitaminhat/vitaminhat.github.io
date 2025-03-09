@@ -1,0 +1,138 @@
+@import url('fonts.css');
+@import url('colors.css');
+
+
+body {
+    display: block;
+    /* Remove flexbox behavior */
+    height: auto;
+    /* Let content grow naturally */
+    margin: 0 auto;
+    padding: 1rem;
+    /* Keep left & right spacing */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 123px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+
+/* Optional styles for other headings and text */
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Links - Normalized Text */
+a {
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+}
+
+a:visited {
+    color: var(--text-color);
+    text-decoration-color: var(--secondary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration-color: var(--primary-color);
+}
+
+
+#sticker {
+    width: 124px;
+    margin-bottom: 86px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-flow: row; 
+    /* Flow items continuously across rows */
+    margin: 0 20px;
+    /* Default margin on left and right */
+}
+
+
+.grid-item {
+    padding: 0px 10px;
+    line-height: 1.2;
+    /* Line spacing for command-description */
+}
+
+
+
+/* Add margin between items */
+.grid-item+.grid-item {
+    margin-top: 0px;
+    /* Space between items */
+}
+
+
+.grid-item a::after {
+    content: " - ";
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    width: calc(100% - 50px);
+    margin: 40px auto;
+    /* Center the horizontal rule and add space above and below */
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 1200px) {
+    .grid-container {
+        margin: 0 auto;
+        /* Center the container */
+        max-width: 1000px;
+        /* Set a maximum width */
+    }
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Single column for small screens */
+    }
+}
+
+.hyphenated {
+    word-break: break-all;
+    /* Break words at any character */
+    hyphens: auto;
+    /* Automatically insert hyphens */
+}
+
+/* Optional: Ensure proper hyphenation for specific languages */
+.hyphenated {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}

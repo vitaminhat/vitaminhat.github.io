@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhat Bui</title>
+    <link rel="stylesheet" href="css/ls.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="img/essential/fav.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="img/essential/fav.ico" alt="Favicon" class="favicon">
+            <span style="letter-spacing: 0.04em;">VITAMINHAT</span>
+        </div>
+        <div class="header-right">
+            <span id="ict-time" style="color: #888;"></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <img id="sticker" src="img/essential/sticker.png" alt="Sticker">
+        <div class="grid-container">
+            <div class="grid-item" style="grid-row: 1; grid-column: 1;">
+                <a href="./" class="link">0. /index</a>
+                <i>back to homepage</i>
+            </div>
+            <div class="grid-item" style="grid-row: 2; grid-column: 1;">
+                <a href="https://example.com" class="link">1. /habibi</a>
+                <i>italic naknas</i>
+            </div>
+            <div class="grid-item" style="grid-row: 1; grid-column: 2;">
+                <a href="https://example.com" class="link">some-command/</a>
+                <i>italic description</i>
+            </div>
+            <div class="grid-item" style="grid-row: 2; grid-column: 2;">
+                <a href="https://example.com" class="link">final-command/</a>
+                <i>italic description</i>
+            </div>
+            <div class="grid-item" style="grid-row: 1; grid-column: 3;">
+                <a href="https://example.com" class="link">another-command/</a>
+                <i>italic description</i>
+            </div>
+        </div>
+
+        <hr> <!-- Add this line for separation -->
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="https://example.com" class="link">command1/</a>
+                <i>italic descrpyion</i>
+            </div>
+            <div class="grid-item">
+                <a href="https://example.com" class="link">another-command-lengerg/</a>
+                <i>italic descrpyion withe lengas sakja san </i>
+            </div>
+            <div class="grid-item">
+                <a href="https://example.com" class="link">some-command/</a>
+                <i>italic descrpyion</i>
+            </div>
+            <div class="grid-item">
+                <a href="https://example.com" class="link">final-command/</a>
+                <i>italic descrpyion</i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var options = { timeZone: 'Asia/Ho_Chi_Minh', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            var timeString = now.toLocaleTimeString([], options);
+            document.getElementById('ict-time').textContent = " ICT " + timeString;
+        }
+
+        // Initial call to set the time
+        updateTime();
+
+        // Update the time every second
+        setInterval(updateTime, 1000); // 1000 milliseconds = 1 second
+    </script>
+</body>
+
+</html>

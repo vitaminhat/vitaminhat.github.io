@@ -26,8 +26,23 @@
     overflow: hidden;
 }
 
+.header a {
+        color: black;
+        text-decoration-color: var(--secondary-color);
+        text-decoration: none;
+}
+
+.header a:visited {
+    color: var(--text-color);
+    text-decoration-color: var(--secondary-color);
+}
+
+.header a:hover {
+}
+
 .favicon {
     width: 16px;
     height: 16px;
     margin-right: 0.5rem;
 }
+
